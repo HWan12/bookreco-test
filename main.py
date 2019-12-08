@@ -44,7 +44,8 @@ engine = appl.return_engine_instance(spark,df_rb,df_mb)
     
 #als_model = appl.load_and_save_model(spark,df_rb,engine)
 '''
-df_mb = spark.read.json('Data/metaBooks.json')
+df_mb = spark.read.json("gs://sh_books_bucket/metaBooks.json")
+#df_rb = spark.read.json("gs://sh_books_bucket/reviews_Books_5.json")
 #model = ALSModel.load('Data/model')
 
 @app.route('/')
