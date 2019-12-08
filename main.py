@@ -14,12 +14,8 @@ from utilityFile import Utility
 from Recommend_App import RecommendationFacade
 from pyspark.ml.recommendation import ALS, ALSModel
 from pyspark.sql.functions import rand
-#import json
 import pyspark
 from pyspark.sql import SQLContext
-
-#sc = pyspark.SparkContext('local[1]')
-#sqlContext = SQLContext(sc)
 
 VIZ_FOLDER = os.path.join('static', 'Viz')
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
