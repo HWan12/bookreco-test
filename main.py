@@ -7,15 +7,15 @@ Created on Sat Nov 30 11:35:41 2019
 """
 
 import os
-from pyspark.sql import SparkSession
+#from pyspark.sql import SparkSession
 from flask import Flask, flash, redirect, render_template, request, url_for, session
 import pandas as pd
-from utilityFile import Utility
-from Recommend_App import RecommendationFacade
-from pyspark.ml.recommendation import ALS, ALSModel
+#from utilityFile import Utility
+#from Recommend_App import RecommendationFacade
+#from pyspark.ml.recommendation import ALS, ALSModel
 from pyspark.sql.functions import rand
 import pyspark
-from pyspark.sql import SQLContext
+#from pyspark.sql import SQLContext
 
 VIZ_FOLDER = os.path.join('static', 'Viz')
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
@@ -25,7 +25,7 @@ app.config['UPLOAD_FOLDER'] = VIZ_FOLDER
 
 
 
-spark = SparkSession.builder.master('local').appName('recommender').getOrCreate()
+#spark = SparkSession.builder.master('local').appName('recommender').getOrCreate()
 '''
 appl = RecommendationFacade()
 
